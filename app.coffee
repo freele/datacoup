@@ -8,7 +8,7 @@ module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
+    js_pipeline(files: 'assets/js/*.js'),
     css_pipeline(files: 'assets/css/*.styl')
   ]
 
