@@ -1,16 +1,24 @@
 .contentLevel0
-  div 
+  div
     | We believe that information that people generate using digital products online and in real life should be treated as a commodity that can be bought and sold to any interested party.
-  div 
+
+  div
     | OK, but 
     span.expandable(onclick='expandCat("#l1_why")') why
     | ?
     include ./level1_why.jade
-  div 
+
+  div
     | And 
     span.expandable(onclick='expandCat("#l1_how")') how
     | ?
     include ./level1_how.jade
+
+  div
+    span.expandable(onclick='expandCat("#l1_how_exactly")') How would that work 
+    | exactly?
+    include ./level1_how_exactly.jade
+
   div
     | Completely agree, 
     span.expandable(onclick='expandCat("#l1_next")') what do I do now
