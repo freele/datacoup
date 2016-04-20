@@ -3,18 +3,30 @@
 normalize-css()
 base()
 
-body
-  padding: 50px
+// body
+//   padding: 50px
+
+.mainWrapper
+  margin: 50px auto;
+  width: 90%;
 
 .contentLevel0
-  font-size: 28px
+  font-size: $font-size-l0
 
 .contentLevel1
-  font-size: 24px
-  padding: 20px 0 0 30px
-  display: none
+  font-size: $font-size-l1
+  padding-left: $padding-l1
+  // display: none
+
+.contentLevel2
+  font-size: $font-size-l2
+  padding-left: $padding-l2
+
+.contentLevel3
+  font-size: $font-size-l3
+  padding-left: $padding-l3
 
 .expandable
-  color: $green
+  color: $common-link-color
   cursor: pointer
   text-decoration: underline
