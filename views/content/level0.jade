@@ -4,7 +4,7 @@
 
   div
     | OK, but 
-    span.expandable(onclick='expandCat("#l1_why")') why
+    span#test.expandable(onclick='expandCat("#l1_why")') why
     | ?
     include ./level1_why.jade
 
@@ -13,11 +13,6 @@
     span.expandable(onclick='expandCat("#l1_how")') how
     | ?
     include ./level1_how.jade
-
-  div
-    span.expandable(onclick='expandCat("#l1_how_exactly")') How would that work 
-    | exactly?
-    include ./level1_how_exactly.jade
 
   div
     | Completely agree, 

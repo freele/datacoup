@@ -1,9 +1,9 @@
-#l1_how.contentLevel1
+.contentLevel1#l1_how
   div 
     | We believe that in order to prevent further 
     span.expandable(onclick='expandCat("#l2_monopoly2")') monopolization of information markets
     | , 
-    #l2_monopoly2.contentLevel2
+    .contentLevel2#l2_monopoly2
       div 
         | You might have noticed it already. There is a strange logic at the heart of the modern tech industry. The goal of many new tech startups is not to produce products or services for which consumers are willing to pay. Instead, the goal is create a digital platform or hub that will capture information from as many users as possible — to grab as many ‘eyeballs’ as you can. 
         | The story of WhatsApp
@@ -15,5 +15,9 @@
     | and try to shape them into a more productive direction.
   div 
     | We propose an ecosystem, that allows everyone who is interested in purchasing people’s generated data, do so directly without having to go through the third party; and for people on other hand, to benefit from the data they produce by controlling which information they are willing to share, whom they share it with, and getting paid for it.
-  div 
-    | How would that work exactly?
+    
+  div
+    span.expandable(onclick='expandCat("#l2_how_exactly")') How would that work exactly?
+    .contentLevel2#l2_how_exactly
+      div We believe that in order to prevent further monopolization of information markets, information has to be available for purchase to everyone who might be interested in using it. Instead of prohibiting and limiting collection and use of personal data, we take underlying market forces, and try to shape them into a more productive direction.
+      div We propose an ecosystem, that allows everyone who is interested in purchasing people’s generated data, do so directly without having to go through the third party; and for people on other hand, to benefit from the data they produce by controlling which information they are willing to share, whom they share it with, and getting paid for it.
