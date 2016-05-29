@@ -3,12 +3,11 @@
 normalize-css()
 base()
 
-// body
-//   padding: 50px
+body
+  padding: 100px
 
 .mainWrapper
-  margin: 50px auto;
-  width: 90%;
+  width: 100%;
 
 // .mainWrapper div
 //   padding-top: 7px;
@@ -21,21 +20,21 @@ base()
 .contentLevel1
   font-size: $font-size-l1;
   padding-left: $padding-l1;
-  display: none;
+  // display: none; temporary commented
 .contentLevel1 > div
   padding: 15px 0;
 
 .contentLevel2
   font-size: $font-size-l2;
   padding-left: $padding-l2;
-  display: none;
+  // display: none; temporary commented
 .contentLevel2 > div
   padding: 10px 0;
 
 .contentLevel3
   font-size: $font-size-l3;
   padding-left: $padding-l3;
-  display: none;
+  // display: none; temporary commented
 .contentLevel3 > div
   padding: 10px 0;
 
@@ -43,3 +42,15 @@ base()
   color: $common-link-color;
   cursor: pointer;
   text-decoration: underline;
+  
+.header
+  height: 100px;
+
+.header > a
+  text-decoration: underline;
+  text-transform: uppercase;
+  
+.headerLeft
+  float: left;
+.headerRight
+  float: right;
