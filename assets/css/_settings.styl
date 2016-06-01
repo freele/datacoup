@@ -4,6 +4,32 @@
 // https://github.com/jenius/axis/blob/master/axis/settings.styl
 // ---------------
 
+@font-face {
+  font-family: "Helvetica-Black 2";
+  src: url("fonts/Helvetica-Black 2.otf") format("opentype");
+}
+@font-face {
+  font-family: "Amiri";
+  font-weight: bold;
+  src: url(fonts/Amiri/Amiri-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Amiri";
+  font-weight: bold;
+  font-style: italic;
+  src: url(fonts/Amiri/Amiri-BoldSlanted.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Amiri";
+  src: url(fonts/Amiri/Amiri-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Amiri";
+  font-style: italic;
+  src: url(fonts/Amiri/Amiri-Slanted.ttf) format("opentype");
+}
+
+
 // Font stacks (add your own!)
 $helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 $helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -12,17 +38,20 @@ $lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 $monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
 $verdana = Verdana, Geneva, sans-serif
 
+$helvetica-black = "Helvetica-Black 2", Helvetica, Arial, sans-serif;
+$amiri = "Amiri", Georgia, serif;
+
 // Default font settings
 $font-stack = $helvetica-neue
 $font-size = 16
-$font-color = #555
+$font-color = #000;
 
 // Content Settings
 $common-link-color = #0000EE
-$font-size-l0 = 32px
-$font-size-l1 = 20px
-$font-size-l2 = 16px
-$font-size-l3 = 16px
+$font-size-l0 = 60px
+$font-size-l1 = 40px
+$font-size-l2 = 26px
+$font-size-l3 = 20px
 // $font-size-l0 = 64px
 // $font-size-l1 = 40px
 // $font-size-l2 = 32px
