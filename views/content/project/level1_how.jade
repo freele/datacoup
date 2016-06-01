@@ -5,9 +5,31 @@
     | , 
     .contentLevel2#l2_monopoly2
       div 
-        | You might have noticed it already. There is a strange logic at the heart of the modern tech industry. The goal of many new tech startups is not to produce products or services for which consumers are willing to pay. Instead, the goal is create a digital platform or hub that will capture information from as many users as possible — to grab as many ‘eyeballs’ as you can. 
-        | The story of WhatsApp
-        | , for example, is just one of the numerous examples. The information captured can then be analysed, repackaged and monetised in various ways. The appetite for this information-capture and analysis seems to be insatiable, with ever increasing volumes of information being extracted and analysed from an ever-expanding array of data-monitoring technologies.
+        | You might have noticed it already. There is a strange logic at the heart of the modern tech industry. The goal of many new tech startups is not to produce products or services for which consumers are willing to pay. Instead, the goal is to create a digital platform or hub that will capture information from as many users as possible — to grab as many ‘eyeballs’ as you can. 
+        span.expandable(onclick='expandCat("l3_whatsapp")') The story of WhatsApp
+        | ,
+        .contentLevel3#l3_whatsapp
+          div
+            | In 2014, then a 4-years-old WhatsApp, an application that provides users a simple interface enabling people to stay in touch with each other, was sold to Facebook for astonishing $22 billions. At the time of the purchase there were 55 employees at WhatsApp, which served 400 millions of people. That makes this acquisition the largest transaction done by any two companies backed by venture capitalists
+            a(href="#" target="_blank")
+              i.fa.fa-external-link.externalLink(aria-hidden="true")
+            | .
+        | for instance, is just one of numerous examples. 
+      div 
+        | Shoshana Zuboff, the famous Harvard business theorist, calls this phenomenon surveillance capitalism 
+        a(href="#")
+          i.fa.fa-external-link.externalLink(aria-hidden="true")
+        |. She believes that it has its own logic, distinct from other forms of capitalism, that needs to be carefully and critically assessed. She is not alone in raising concerns over the ever-growing influence tech companies are gaining due to the unrestricted and exclusive access to the information. So how does it really work?
+        | <img surveillance capitalism>
+        div It starts with providing, usually free, services for people and collecting as much information as possible in the process of usage. There seems to be an insatiable appetite for capture of ever-increasing volumes of information from ever-expanding array of sources. Since users have little awareness and control about information being collected, it is becoming relatively easy and cheap to do so, and tech companies rarely discriminate against which information is valuable and which is not. Everything goes: our social preferences, buying history, likes, activity logs and many more. Tons of information is being pumped into the ever-growing servers every second. 
+        div 
+          | Once information is captured, it can then be analyzed and monetized as it allows to understand people’s behaviors. This feature makes data the main ingredient in 
+          span.expandable(onclick='expandCat("l3_adRecipe")') the recipe for perfect advertising
+          | .
+          .contentLevel3#l3_adRecipe
+            div
+              | Today, advertising constitutes 20-60% of product price. That means the more effective advertising is, the cheaper the product becomes, which makes it more attractive against the market competition. In other words, in order to remain competitive, companies are striving to increase effectiveness of advertising by showing targeted messages only to people who are already interested in buying certain products, and therefore eliminate wastage associated with traditional advertising approach — where large and non-specific groups of people are exposed to an ad content. This approach — called targeted advertisement — is enabled by large amounts of data collected from people. The data allows to analyze past behavior of users and predict future behaviors and needs. 
+              | <img AD recipe>
     | information has to be available for purchase to everyone who might be interested in using it. Instead of prohibiting and limiting collection and use of personal data, we take 
     //- _TODO add link add text here
     | underlying market forces
