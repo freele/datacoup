@@ -1,0 +1,12 @@
+mixin link(link)
+  a(href= link target="_blank")
+    i.fa.fa-external-link.externalLink(aria-hidden="true")
+
+mixin exp(cat, level, link, other)
+  span.expandable(onclick='expandCat("'+cat+'")')= link
+  span= other
+  div(id=cat, class='contentLevel'+level)
+    block
+
+mixin pic(src)
+  img(src= 'img/'+src)

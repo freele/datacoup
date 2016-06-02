@@ -1,20 +1,17 @@
+include ./mixins.jade
+
 .contentLevel0
   div
     | We believe that information you generate using digital products should be bringing you money, and be available for anyone to buy.
   div
-    | OK, but 
-    span#test.expandable(onclick='expandCat("l1_why")') why
-    | ?
-    include ./level1_why.jade
+    +exp('l1_why', 1, 'OK, but why?')
+      include ./level1_why.jade
 
   div
-    | And 
-    span.expandable(onclick='expandCat("l1_how")') how
-    | ?
-    include ./level1_how.jade
+    +exp('level1_how', 1, 'And how?')
+      include ./level1_how.jade
 
   div
     | Completely agree, 
-    span.expandable(onclick='expandCat("l1_next")') what do I do now
-    | ?
-    include ./level1_next.jade
+    +exp('l1_next', 1, 'what do I do now?')
+      include ./level1_next.jade
