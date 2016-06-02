@@ -10,3 +10,8 @@ mixin exp(cat, level, link, other)
 
 mixin pic(src)
   img(src= 'img/'+src)
+
+mixin _li(text, n)
+  .liWrapper
+    .numberCircle= n
+    div= text
