@@ -35,8 +35,10 @@ function expandCat(cat, state, initialLoad) {
     updateQueryWithoutReload(newQuery);
   }
 
-  var cat = $('#' + cat);
-  toggle(cat, state);
+  var cat = $('[id=' + cat + ']');
+  cat.each(function(ind, obj) {
+    toggle(obj, state);
+  })
 }
 
 

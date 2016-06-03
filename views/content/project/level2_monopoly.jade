@@ -1,0 +1,53 @@
+include ./mixins.jade
+
+div
+  | You might have noticed it already. There is a strange logic at the heart of the modern tech industry. The goal of many new tech startups is not to produce products or services for which consumers are willing to pay. Instead, the goal is to create a digital platform or hub that will capture information from as many users as possible — to grab as many ‘eyeballs’ as you can. 
+  +exp('whatsapp', 3, 'The story of WhatsApp', ',')
+    div 
+      | In 2014, then a 4-years-old WhatsApp, an application that provides users a simple interface enabling people to stay in touch with each other, was sold to Facebook for astonishing $22 billions. At the time of the purchase there were 55 employees at WhatsApp, which served 400 millions of people. That makes this acquisition the largest transaction done by any two companies backed by venture capitalists.
+      +link('https://en.wikipedia.org/wiki/WhatsApp')
+  | for instance, is just one of numerous examples. 
+
+div
+  | Shoshana Zuboff, the famous Harvard business theorist, calls this phenomenon surveillance capitalism 
+  +link('http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2594754')
+  |. She believes that it has its own logic, distinct from other forms of capitalism, that needs to be carefully and critically assessed. She is not alone in raising concerns over the ever-growing influence tech companies are gaining due to the unrestricted and exclusive access to the information. So how does it really work?
+  +pic('2_surveillance_capitalism.png')
+div 
+  | It starts with providing, usually free, services for people and collecting as much information as possible in the process of usage. There seems to be an insatiable appetite for capture of ever-increasing volumes of information from ever-expanding array of sources. Since users have little awareness and control about information being collected, it is becoming relatively easy and cheap to do so, and tech companies rarely discriminate against which information is valuable and which is not. Everything goes: our social preferences, buying history, likes, activity logs and many more. Tons of information is being pumped into the ever-growing servers every second. 
+div 
+  | Once information is captured, it can then be analyzed and monetized as it allows to understand people’s behaviors. This feature makes data the main ingredient in 
+  +exp('l3_adRecipe', 3, 'the recipe for perfect advertising', '.')
+    div
+      | Today, advertising constitutes 20-60% of product price. That means the more effective advertising is, the cheaper the product becomes, which makes it more attractive against the market competition. In other words, in order to remain competitive, companies are striving to increase effectiveness of advertising by showing targeted messages only to people who are already interested in buying certain products, and therefore eliminate wastage associated with traditional advertising approach — where large and non-specific groups of people are exposed to an ad content. This approach — called targeted advertisement — is enabled by large amounts of data collected from people. The data allows to analyze past behavior of users and predict future behaviors and needs. 
+      +pic('18_ad_recipe.png')
+div
+  | The old logic where advertisers purchase space or time in media with hope to get user’s attention is quickly becoming obsolete. Instead of addressing rather general audience thought key media channels, they can now skip media altogether, tailor message to a specific person, and locate them anywhere online (and increasingly in physical space) due to ubiquitous surveillance. This results in a much more efficient advertising. And since marketing and advertising are naturally moving towards greater efficiency, companies that have access to the largest amounts of data naturally become the most powerful players in the advertising market (Google and Facebook have monopoly on search queries and social graphs respectively). The above mentioned duo, combined, receives over 70% of all the dollars spent on online advertising in the US.
+div
+  | On the user’s side, the collected information allows to personalize and improve free services provided, thus attracting even more loyal users, allowing to collect even more precise information and make the system more attractive to marketers and advertisers. This creates a self-reinforcing loop, which becomes hard to escape. As omnipresent technologies become the new social norm, people rarely are willing to make a sacrifice for privacy or ethical concerns. It makes for an interesting phenomenon in which tech companies are becoming the wealthiest charities out there: users are giving away the very resource that makes them so powerful for free.
++pic('3_monopoly.png')
+div
+  | As a result, Google and Facebook quickly became monopolies in their respective fields, representing about 70% of online advertising market share. Companies that had not existed before 2003, now became unquestionable part of any marketing strategy. The recipe is working so well, however, that surveillance capitalism companies are 
+  +exp('entering', 3, 'entering the real world')
+    div
+      | 
+  | in order to collect more information about their users. While collecting data online allows for serving targeted ads, information collected from the connected objects and wearables allows to understand, anticipate human behavior in real time and 
+  +exp('profit', 3, 'then shape it for profit', '.')
+    div 
+      | Let’s use a couple of real life examples of technologies that are already in place or are under development. Auto insurance industry, for example, is one of those that has been notoriously exploitative toward customers and has had obvious reasons to be anxious about the implications of self-driving cars for its business model. As Shoshanna Zuboff famously put it in her article: ”Now, that data about where we are, where we’re going, how we’re feeling, what we’re saying, the details of our driving, and the conditions of our vehicle are turning into beacons of revenue that illuminate a new commercial prospect. According to the industry literature, these data can be used for dynamic real-time driver behavior modification triggering punishments (real-time rate hikes, financial penalties, curfews, engine lock-downs) or rewards (rate discounts, coupons, gold stars to redeem for future benefits).”
+    div
+      | This is just one example, in one corner, of one industry, and the examples are multiplying day by day. Among the many interviews Shoshanna have conducted over the past three years, the Chief Data Scientist of a much-admired Silicon Valley startup that develops products to improve students’ learning told, “The goal of everything we do is to change people’s actual behavior at scale. When people use our app, we can capture their behaviors, identify good and bad behaviors, and develop ways to reward the good and punish the bad. We can test how actionable our cues are for them and how profitable for us”.
+    div
+      | The whole paradigm of a functional, effective, affordable product as a basis for economic exchange is becoming thing of the past. The sports apparel company Under Armour is reinventing its products as wearable devices. The CEO wants to be like Google. He says, "If it all sounds eerily like those ads that, because of your browsing history, follow you around the Internet, that's exactly the point – except Under Armour is tracking real behavior and the data is more specific… making people better athletes makes them need more of our gear.”  The examples of this new logic are countless, from smart vodka bottles 
+      +link('http://phys.org/news/2015-05-ready-liquor-bottles-smart.html')
+      | to Internet-enabled rectal thermometers 
+      +link('https://motherboard.vice.com/read/this-rectal-thermometer-is-the-logical-conclusion-of-the-internet-of-things')
+      | and quite literally everything in between. A Goldman Sachs report
+      +link('https://hbr.org/2014/10/the-sectors-where-the-internet-of-things-really-matters/')
+      | calls it a “gold rush,” a race to “vast amounts of data.”
+    +pic('19_manipulation_of_behavior.png')
+    div
+      | If we take a step back and think, almost every aspect of our lives is now shaped by technology. The places we go for a dinner after checking reviews online, the algorithmically selected music to fit our taste, the places we stay at during our travels, the cars we drive, the routes we drive through, people we date – the list goes on and on. The game is no longer about sending you a mail order catalogue or even targeted online advertising. The game is selling access to the real-time flow of your daily life – your reality – in order to directly influence and modify your behavior for profit. This is the gateway to a new universe of monetization opportunities: restaurants who want to be your destination. Service vendors who want to fix your bike wheels. Shops who will lure you by targeted offers. Essentially everyone who wants a piece of your behavior for profit. Small wonder, then, that Google recently announced
+      +link('http://www.wsj.com/articles/google-maps-suggests-destination-1452730965')
+      | that its maps will not only provide the route you search but will also suggest a destination.
+  | This phenomenon called “reality mining” is at heart of most surveillance capitalism projects and is the basis for the perfect form of advertising — where people’s behavior is simply subconsciously shaped to profit companies in question, without having to advertise anything.
