@@ -1,5 +1,5 @@
-mixin link(link)
-  a(href= link target="_blank")
+mixin link(link, tooltip)
+  a(href= link target="_blank" data-toggle="tooltip" data-placement="top" title= tooltip)
     i.fa.fa-external-link.externalLink(aria-hidden="true")
 
 mixin exp(cat, level, link, other)
