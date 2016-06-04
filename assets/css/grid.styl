@@ -1,0 +1,56 @@
+.row, 
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+}
+
+// scw = (100 – (m * (mc – 1))) / mc
+
+.column + .column {
+    margin-left: 5.0%;
+}
+
+
+.column-6 {
+    width: 47.5%;
+}
+
+.column-4 {
+    width: 30.0%;
+}
+
+@media only screen and (max-width: 800px) {
+    .column-1, 
+    .column-2, 
+    .column-3, 
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        width: auto;
+        float: none;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
