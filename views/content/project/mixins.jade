@@ -20,3 +20,10 @@ mixin list
   b
     block
     | <br />
+
+mixin paper(n, auth, name, link, more)
+  p
+    span= n+'. '
+    span= auth+' '
+    a.paperLink(href= link target="_blank")= name+' '
+    span= more

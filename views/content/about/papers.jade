@@ -1,34 +1,172 @@
 include ../project/mixins.jade
 
+h2 papers
 .row.papers
   .column.column-4
-    p 1. Varian, Hal R.. 2010. "Computer Mediated Transactions."  American Economic Review, 100(2): 1-10. [link]
-    p 2. Zuboff, Shoshana. 2015. “Big Other: Surveillance Capitalism and the Prospects of an Information Civilization.” Journal of Information Technology (2015) 30, 75–89. [link]
-    p 3. Persson, Petra. 2016. “Attention Manipulation and Information Overload: Barriers to Consumer Protection.” Stanford University. [link]
-    p 4. Gullström, Charlie. 2010. “Presence Design. Mediated Spaces Extending Architecture.” Royal Institute of Technology (KTH), Stockholm, Sweden [link]
-    p 5. Lehdonvirta, Vili. 2009. “Virtual Consumption.” Turku: Turku School of Economics. [link]
-    p 6. Robert M. Bond, Christopher J. Fariss, Jason J. Jones, Adam D.I. Kramer, Cameron Marlow, Jaime E. Settle, James H. Fowler. “A 61-Million-Person Experiment in Social Influence and Political Mobilization.” Political Science Department, University of California, San Diego, La Jolla, California. [link]
-    p 7. K. Carrie Armel, Aurelie Beaumel, and Antonio Rangel. 2008. “Biasing simple choices by manipulating relative visual attention.” Department of Economics, Stanford University, HSS & Computational and Neural Systems, California Institute of Technology. [link]
-    p 8. Bellamy Foster, John and W. McChesney, Robert. 2014. “Surveillance Capitalism. Monopoly-Finance Capital, the Military-Industrial Complex, and the Digital Age.” Monthly Review, Volume 66, Issue 03. [link] 
-  .column.column-4        
-    p 9. Landay, Lori. 2008. “Having But Not Holding: Consumerism and Commodification in Second Life.“ Journal of Virtual Worlds Research. [link]
-    p 10. Mortimer, Thomas. 1801. “Lectures on the Elements of Commerce, Politics and Finances.” [link]
-    p 11. Epstein, Robert. 2016. “New Mind Control. How Internet Flips Elections and Alters Our Thoughts.” Aeon Magazine. [link]
-    p 12. Stark, Chelsea. 2016. "Misled Memories. Virtual reality is ready to manipulate your emotions.” Mashable. [link]
-    p 13. Lanier, Jaron. 2013. “Who Owns the Future.” Simon and Schuster. [link]
-    p 14. Lanier, Jaron. 2014. “On Facebook and the Creepy Possibilities for Virtual Reality.” Techonomy. [link]
-    p 15. Kas, Thomas. 2015. “Should Google Pay Its Users?” Bigthink. [link]
-    p 16. Morozov, Evgeny. 2014. “The rise of data and the death of politics.” The Guardian. [link]
-    p 17. Morozov, Evgeny. 2014. “Who pays for us to browse the web? Be wary of Google’s latest answer.” The Guardian. [link]
-    p 18. Morozov, Evgeny. 2015. “When apps are driven by the market, there’s only one winner. It’s not you…” The Guardian. [link]
-    p 19. Kaste, Martin. 2014. “Think Internet Data Mining Goes Too Far? Then You Won't Like This.” NPR. [link] 
+    +paper('1', 
+    'Varian, Hal R.. 2010.', 
+    'Computer Mediated Transactions.', 
+    'https://www.aeaweb.org/articles?id=10.1257/aer.100.2.1', 
+    'American Economic Review, 100(2): 1-10.')
+
+    +paper('2', 
+    'Zuboff, Shoshana. 2015.', 
+    'Big Other: Surveillance Capitalism and the Prospects of an Information Civilization.', 
+    'http://ssrn.com/abstract=2594754', 
+    'Journal of Information Technology (2015) 30, 75–89.')
+
+    +paper('3', 
+    'Persson, Petra. 2016.', 
+    'Attention Manipulation and Information Overload: Barriers to Consumer Protection.', 
+    'http://web.stanford.edu/~perssonp/Attention_Manipulation.pdf', 
+    'Stanford University.')
+
+    +paper('4', 
+    'Gullström, Charlie. 2010.', 
+    'Presence Design. Mediated Spaces Extending Architecture.', 
+    'http://www.diva-portal.se/smash/get/diva2:349960/FULLTEXT01.pdf', 
+    'Royal Institute of Technology (KTH), Stockholm, Sweden')
+
+    +paper('5', 
+    'Lehdonvirta, Vili. 2009.', 
+    'Virtual Consumption.', 
+    'http://vili.lehdonvirta.com/files/thes3988/Virtual-consumption-thesis.html', 
+    'Turku: Turku School of Economics.')
+
+    +paper('6', 
+    'Robert M. Bond, Christopher J. Fariss, Jason J. Jones, Adam D.I. Kramer, Cameron Marlow, Jaime E. Settle, James H. Fowler.', 
+    'A 61-Million-Person Experiment in Social Influence and Political Mobilization.', 
+    'https://www.researchgate.net/publication/230841708_A_61-Million-Person_Experiment_in_Social_Influence_and_Political_Mobilization', 
+    'Political Science Department, University of California, San Diego, La Jolla, California.')
+
+    +paper('7', 
+    'K. Carrie Armel, Aurelie Beaumel, and Antonio Rangel. 2008.', 
+    'Biasing simple choices by manipulating relative visual attention.', 
+    'http://journal.sjdm.org/8319/jdm8319.html', 
+    'Department of Economics, Stanford University, HSS & Computational and Neural Systems, California Institute of Technology.')
+
+    +paper('8', 
+    'Bellamy Foster, John and W. McChesney, Robert. 2014.', 
+    'Surveillance Capitalism. Monopoly-Finance Capital, the Military-Industrial Complex, and the Digital Age.', 
+    'http://monthlyreview.org/2014/07/01/surveillance-capitalism/', 
+    'Monthly Review, Volume 66, Issue 03.')
+
+  .column.column-4    
+    +paper('9', 
+    'Landay, Lori. 2008.', 
+    'Having But Not Holding: Consumerism and Commodification in Second Life.', 
+    'https://journals.tdl.org/jvwr/index.php/jvwr/article/view/355', 
+    'Journal of Virtual Worlds Research.') 
+        
+    +paper('10', 
+    'Mortimer, Thomas. 1801.', 
+    'Lectures on the Elements of Commerce, Politics and Finances.', 
+    'https://books.google.ru/books?id=3sJgAAAAcAAJ&dq=thomas+mortimer&source=gbs_navlinks_s')
+
+    +paper('11', 
+    'Epstein, Robert. 2016.', 
+    'New Mind Control. How Internet Flips Elections and Alters Our Thoughts.', 
+    'https://aeon.co/essays/how-the-internet-flips-elections-and-alters-our-thoughts', 
+    'Aeon Magazine.')
+
+    +paper('12', 
+    'Stark, Chelsea. 2016.', 
+    'Misled Memories. Virtual reality is ready to manipulate your emotions.', 
+    'http://mashable.com/2014/06/26/virtual-reality-memory/#jXMUgeHjskqW', 
+    'Mashable. ')
+
+    +paper('13', 
+    'Lanier, Jaron. 2013.', 
+    'Who Owns the Future.', 
+    'http://www.amazon.com/Who-Owns-Future-Jaron-Lanier/dp/1451654979', 
+    'Simon and Schuster.')
+
+    +paper('14', 
+    'Lanier, Jaron. 2014.', 
+    'On Facebook and the Creepy Possibilities for Virtual Reality.', 
+    'http://techonomy.com/2014/04/jaron-lanier-facebook-creepy-possibilities-virtual-reality/', 
+    'Techonomy.')
+
+    +paper('15', 
+    'Kas, Thomas. 2015.', 
+    'Should Google Pay Its Users?', 
+    'http://bigthink.com/devil-in-the-data/should-google-pay-its-users', 
+    'Bigthink.')
+
+    +paper('16', 
+    'Morozov, Evgeny. 2014.', 
+    'The rise of data and the death of politics.', 
+    'https://www.theguardian.com/technology/2014/jul/20/rise-of-data-death-of-politics-evgeny-morozov-algorithmic-regulation', 
+    'The Guardian.')
+
+    +paper('17', 
+    'Morozov, Evgeny. 2014.', 
+    'Who pays for us to browse the web? Be wary of Google’s latest answer.', 
+    'http://www.theguardian.com/commentisfree/2014/nov/30/new-ways-to-fund-the-web', 
+    'The Guardian.')
+
+    +paper('18', 
+    'Morozov, Evgeny. 2015.', 
+    'When apps are driven by the market, there’s only one winner. It’s not you…', 
+    'http://www.theguardian.com/commentisfree/2015/mar/29/apps-that-let-the-market-invade-private-lives-evgeny-morozov', 
+    'The Guardian.')
+
+    +paper('19', 
+    'Kaste, Martin. 2014.', 
+    'Think Internet Data Mining Goes Too Far? Then You Won\'t Like This.', 
+    'http://www.npr.org/sections/alltechconsidered/2014/05/29/317037186/think-internet-data-mining-goes-too-far-then-you-wont-like-this', 
+    'NPR.')
+
+    +paper('20', 
+    'Frank, Aaron. 2016.', 
+    'In the Future Ownerless Companies Will Live on Blockchain.', 
+    'http://singularityhub.com/2016/02/16/how-ownerless-firms-will-soon-live-on-the-blockchain/', 
+    'Singularity Hub.')
+
   .column.column-4
-    p 20. Frank, Aaron. 2016. “In the Future Ownerless Companies Will Live on Blockchain.” Singularity Hub. [link]
-    p 21. Kofman, Ava. 2015. “Dueling Realities.” The Atlantic. [link]
-    p 22. Vance, Jeff. 2013. “Big Data Analytics Overview” Datamation. [link]
-    p 23. Barr, Alistair. 2016. “Google Maps Suggests Destination.” The Wall Street Journal. [link]
-    p 24. Leslie, Ian. 2014. “Kodak vs. Instagram. Why it’s only going to get harder to make a good living.” New Statesman. [link] 
-    p 25. Korosec, Kirsten. 2016. “The Artificial Intelligence in Google's Self-Driving Cars Now Qualifies as Legal Driver”. Fortune Magazine. [link] 
-    p 26. Schwab, Klaus. 2016. “The Fourth Industrial Revolution: what it means, how to respond.” World Economic Forum. [link]
-    p 27. World Economic Forum. 2016. “The Future of Jobs.” [link]
-    p 28. The White House. 2016. “Economic Report of the President.” [link]
+    +paper('21', 
+    'Kofman, Ava. 2015.', 
+    'Dueling Realities.', 
+    'http://www.theatlantic.com/technology/archive/2015/06/dueling-realities/395126/', 
+    'The Atlantic.')
+
+    +paper('22', 
+    'Vance, Jeff. 2013.', 
+    'Big Data Analytics Overview.', 
+    'http://www.datamation.com/applications/big-data-analytics-overview.html', 
+    'Datamation.')
+
+    +paper('23', 
+    'Barr, Alistair. 2016.', 
+    'Google Maps Suggests Destination.', 
+    'http://www.wsj.com/articles/google-maps-suggests-destination-1452730965', 
+    'The Wall Street Journal.')
+
+    +paper('24', 
+    'Leslie, Ian. 2014.', 
+    'Kodak vs. Instagram. Why it’s only going to get harder to make a good living.', 
+    'http://www.newstatesman.com/politics/2014/01/kodak-vs-instagram-why-its-only-going-get-harder-make-good-living', 
+    'New Statesman.')
+
+    +paper('25', 
+    'Korosec, Kirsten. 2016.', 
+    'The Artificial Intelligence in Google\'s Self-Driving Cars Now Qualifies as Legal Driver.', 
+    'http://fortune.com/2016/02/10/google-self-driving-cars-artificial-intelligence/', 
+    'Fortune Magazine.') 
+
+    +paper('26', 
+    'Schwab, Klaus. 2016.', 
+    'The Fourth Industrial Revolution: what it means, how to respond.', 
+    'https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/', 
+    'World Economic Forum.') 
+
+    +paper('27', 
+    'World Economic Forum. 2016.', 
+    'The Future of Jobs.', 
+    'http://www3.weforum.org/docs/WEF_Future_of_Jobs.pdf')
+
+    +paper('28', 
+    'The White House. 2016.', 
+    'Economic Report of the President.', 
+    'https://www.whitehouse.gov/sites/default/files/docs/ERP_2016_Book_Complete%20JA.pdf')
+

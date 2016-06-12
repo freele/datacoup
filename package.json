@@ -2,8 +2,8 @@
   "name": "datacoup",
   "description": "A brief description (to update later)",
   "dependencies": {
-    "autoprefixer-stylus": "0.8.x",
-    "axis": "0.5.x",
+    "autoprefixer-stylus": "^0.9.3",
+    "axis": "^0.6.1",
     "coffee-script": "^1.0.0",
     "css-pipeline": "0.3.x",
     "jade": "^1.0.0",
@@ -11,7 +11,7 @@
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
     "rupture": "0.6.x",
-    "stylus": "0.52.x"
+    "stylus": "^0.54.5"
   },
   "devDependencies": {
     "ship": "^0.2.5"
