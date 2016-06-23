@@ -6,12 +6,10 @@ include ./mixins.jade
   div
     +exp('l1_why', 1, 'OK, but why?')
       include ./level1_why.jade
-
-  div
+    | <br />
     +exp('level1_how', 1, 'And how?')
       include ./level1_how.jade
-
-  div
+    | <br />
     | Completely agree, 
     +exp('l1_next', 1, 'what do I do now?')
       include ./level1_next.jade

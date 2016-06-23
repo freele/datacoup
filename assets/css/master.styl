@@ -9,7 +9,7 @@ html
 body
   height: 100%;
   font-family: $amiri;
-  line-height: 1.3;
+  line-height: 1.2;
   
 a 
   color: $font-color;
@@ -33,7 +33,11 @@ h2
 .contentLevel0
   font-size: $font-size-l0;
 .contentLevel0 > div
-  padding-bottom: 100px;
+  padding-bottom: 100px;  
+.contentLevel0 > div > .expandable
+  border-bottom: 2px solid black;
+  display: inline-block;
+  height: $font-size-l0 - 5;
 
 .contentLevel1
   font-size: $font-size-l1;
@@ -41,6 +45,10 @@ h2
   display: none; // temporary commented
 .contentLevel1 > div
   padding: 20px 0px;
+.contentLevel1 > div > .expandable
+  border-bottom: 2px solid black;
+  display: inline-block;
+  height: $font-size-l1 - 4;
 
 .contentLevel2
   font-size: $font-size-l2;
@@ -48,6 +56,10 @@ h2
   display: none; // temporary commented
 .contentLevel2 > div
   padding: 16px 0px;
+// .contentLevel2 > div > .expandable
+//   border-bottom: 2px solid black;
+//   display: inline-block;
+//   height: $font-size-l2 - 2;
 
 .contentLevel3
   font-size: $font-size-l3;
@@ -56,10 +68,11 @@ h2
 .contentLevel3 > div
   padding: 10px 0;
 
+
 .expandable
   color: $font-color;
   cursor: pointer;
-  text-decoration: underline;
+
   
 .header
   height: 50px;
@@ -99,7 +112,7 @@ h2
 }
 
 .wrapper {
-  padding: 50px 100px 100px 100px;
+  padding: 45px 100px 100px 100px;
 }
 
 .wrapperVideo {
