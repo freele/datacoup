@@ -9,6 +9,7 @@ html
 body
   height: 100%;
   font-family: $amiri;
+  font-size: $font-size;
   line-height: 1.2;
   
 a 
@@ -21,70 +22,27 @@ h2
   font-family: $helvetica-black;
   font-size: 13px;
   text-transform: uppercase;
-h2.hPapers
-  margin-top: 70px;
-  margin-bottom: 30px;
-h2.hPress
-  margin-top: 80px;
-  margin-bottom: 45px;
-h2.hTeam
-  margin-top: 95px;
-  margin-bottom: 45px;
 
-.mainWrapper
-  width: 100%;
+.wrapper {
+  padding: 45px 100px 100px 100px;
+}
+
+@media only screen and (max-width: $widthSmallScreen) and (min-width: $widthMobile){
+  .wrapper {
+    padding: 15px 40px 40px 40px;
+  }
+}
+@media only screen and (max-width: $widthMobile) {
+  .wrapper {
+    padding: 15px 20px 20px 20px;
+  }
+}
+
 
 // .mainWrapper div
 //   padding-top: 7px;
 
-.contentLevel0
-  font-size: $font-size-l0;
-.contentLevel0 > div
-  padding-bottom: 0px;  
-.contentLevel0 > div > .expandable
-  // text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #000 30px, #000 32px, rgba(0, 0, 0, 0) 32px);
 
-.contentLevel1
-  font-size: $font-size-l1;
-  padding: 0px 0px 50px $padding-l1;
-  display: none; // temporary commented
-.contentLevel1 > div
-  padding: 50px 0px 0px 0px;
-.contentLevel1 > div > .expandable
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 18px, #000 18px, #000 20px, rgba(0, 0, 0, 0) 20px);
-.contentLevel1 a
-  font-size: $font-size-l1*0.7;
-.contentLevel1.lastElement
-  padding-bottom: 0px;
-
-.contentLevel2
-  font-size: $font-size-l2;
-  padding: 0px 0px 10px $padding-l2;
-  display: none; // temporary commented
-.contentLevel2 > div
-  padding: 40px 0px 0px 0px;
-.contentLevel2 a
-  font-size: $font-size-l2*0.7;
-.contentLevel2 > div > .expandable
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, #000 13px, #000 14px, rgba(0, 0, 0, 0) 14px);
-
-.contentLevel3
-  font-size: $font-size-l3;
-  padding: 0px 0px 15px $padding-l3;
-  display: none; // temporary commented
-.contentLevel3 > div
-  padding: 35px 0px 0px 0px;
-.contentLevel3 a
-  font-size: $font-size-l3*0.7;
-
-
-
-.expandable
-  color: $font-color;
-  cursor: pointer;
-
-  
 .header
   height: 50px;
 
@@ -102,97 +60,4 @@ h2.hTeam
   
 .externalLink
   padding: 0 5px;
-  
-.liWrapper {
-  padding: 10px 0px;
-}
-
-
-$circle1LineHeight = 24px;
-$circle1Padding = 7px;
-.numberCircle1 {
-  border-radius: 50%;
-  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-
-  width: 20px;
-  height: 20px;
-  line-height: $circle1LineHeight;
-  margin-right: 10px;
-  padding: $circle1Padding;
-  
-  background: #fff;
-  border: 2px solid $font-color;
-  text-align: center;
-
-}
-.liText {
-  padding-left: 50px;
-  margin-top: -($circle1LineHeight + 2*$circle1Padding);
-}
-
-.wrapper {
-  padding: 45px 100px 100px 100px;
-}
-
-.wrapperVideo {
-  background: #000;
-  color: #fff;
-  height: 100%;
-}
-.headerVideo > a {
-  color: white;
-}
-
-.description {
-  font-size: 26px;
-}
-
-.papers {
-  font-size: 16px;
-}
-
-.team {
-  font-size: 16px;
-}
-
-.press {
-  font-size: 16px;
-}
-
-.paperLink {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.shareWrapper {
-  padding: 10px 0px 0px 0px !important;
-}
-
-.descDiv {
-  padding-bottom: 20px;
-}
-
-
-body {
-
-}
-
-a.custom {
-  text-decoration: none;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, #333333 2px, #333333 3px, rgba(0, 0, 0, 0) 3px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

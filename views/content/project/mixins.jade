@@ -5,17 +5,23 @@ mixin link(link, tooltip)
 mixin exp(cat, level, link, other, addClass)
   span.expandable(onclick='expandCat("'+cat+'")')= link+(other||'')
   //- span= other
-  div(id=cat, class='contentLevel'+level+' '+addClass)
+  div(id=cat, class='contentLevel'+level+' '+(addClass||''))
     block
 
 mixin pic(src)
   div
     img(src= 'img/'+src)
 
-mixin _li(n)
-  .liWrapper
+mixin _li1(n)
+  .liWrapper1
     .numberCircle1= n
-    .liText
+    .liText1
+      block
+
+mixin _li2(n)
+  .liWrapper2
+    .numberCircle2= n
+    .liText2
       block
 
 mixin list

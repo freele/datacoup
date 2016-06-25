@@ -1,0 +1,60 @@
+@import '_settings'
+
+.contentLevel0
+  font-size: $font-size-l0;
+.contentLevel0 > div
+  padding-bottom: 80px;  
+.contentLevel0 > div > .expandable
+  // text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #000 30px, #000 32px, rgba(0, 0, 0, 0) 32px);
+.contentLevel0 > .lastElement
+  padding-bottom: 0px;
+
+
+.contentLevel1
+  font-size: $font-size-l1;
+  padding: 0px 0px 50px $padding-l1;
+  display: none; // temporary commented
+.contentLevel1 > div
+  padding: 50px 0px 0px 0px;
+.contentLevel1 > div > ol
+  padding: 50px 0px 0px 0px;
+  margin: 0px;
+.liText1 > span,
+.contentLevel1 > div > .expandable
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 18px, #000 18px, #000 20px, rgba(0, 0, 0, 0) 20px);
+.contentLevel1 a
+  font-size: $font-size-l1*0.7;
+.contentLevel1.lastElement
+  padding-bottom: 0px;
+
+.contentLevel2
+  font-size: $font-size-l2;
+  padding: 0px 0px 40px $padding-l2;
+  display: none; // temporary commented
+.contentLevel2 > div
+  padding: 40px 0px 0px 0px;
+.contentLevel2 a
+  font-size: $font-size-l2*0.7;
+.contentLevel2 > div > .expandable
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 13px, #000 13px, #000 14px, rgba(0, 0, 0, 0) 14px);
+.contentLevel2.lastElement
+  padding-bottom: 0px;
+.contentLevel2 > div > ol
+  padding: 40px 0px 0px 0px;
+  margin: 0px;
+
+.contentLevel3
+  font-size: $font-size-l3;
+  padding: 0px 0px 35px $padding-l3;
+  display: none; // temporary commented
+.contentLevel3 > div
+  padding: 35px 0px 0px 0px;
+.contentLevel3 a
+  font-size: $font-size-l3*0.7;
+.contentLevel3.lastElement
+  padding-bottom: 0px;
+
+.expandable
+  color: $font-color;
+  cursor: pointer;

@@ -1,0 +1,55 @@
+@import '_settings'
+
+.description {
+  font-size: $font-size-larger1;
+}
+.description a {
+  font-size: $font-size-larger1 * 0.7;
+}
+
+.press,
+.team,
+.papers {
+  font-size: $font-size;
+}
+
+.paperLink {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.shareWrapper {
+  padding: 10px 0px 0px 0px !important;
+}
+
+.descDiv {
+  padding-bottom: 20px;
+}
+
+h2.hPapers
+  margin-top: 70px;
+  margin-bottom: 30px;
+h2.hPress
+  margin-top: 80px;
+  margin-bottom: 45px;
+h2.hTeam
+  margin-top: 95px;
+  margin-bottom: 25px;
+.teamCol
+  margin-top: 20px;
+  
+@media only screen and (max-width: $widthMobile) {
+  .description {
+    font-size: $font-size-larger1-mobile;
+  }
+  .description a {
+    font-size: $font-size-larger1-mobile * 0.7;
+  }
+
+  .press,
+  .team,
+  .papers {
+    font-size: $font-size-mobile;
+  }
+}
+

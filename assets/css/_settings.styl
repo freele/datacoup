@@ -4,47 +4,18 @@
 // https://github.com/jenius/axis/blob/master/axis/settings.styl
 // ---------------
 
-@font-face {
-  font-family: "Helvetica-Black 2";
-  src: url("fonts/Helvetica-Black 2.otf") format("opentype");
-}
-@font-face {
-  font-family: "Amiri";
-  font-weight: bold;
-  src: url(fonts/Amiri/Amiri-Bold.ttf) format("opentype");
-}
-@font-face {
-  font-family: "Amiri";
-  font-weight: bold;
-  font-style: italic;
-  src: url(fonts/Amiri/Amiri-BoldSlanted.ttf) format("opentype");
-}
-@font-face {
-  font-family: "Amiri";
-  src: url(fonts/Amiri/Amiri-Regular.ttf) format("opentype");
-}
-@font-face {
-  font-family: "Amiri";
-  font-style: italic;
-  src: url(fonts/Amiri/Amiri-Slanted.ttf) format("opentype");
-}
-
-
 // Font stacks (add your own!)
-$helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
-$helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
-$georgia = Georgia, Cambria, "Times New Roman", Times, serif
-$lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
-$monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
-$verdana = Verdana, Geneva, sans-serif
-
 $helvetica-black = "Helvetica-Black 2", Helvetica, Arial, sans-serif;
 $amiri = "Amiri", Georgia, serif;
 
 // Default font settings
 $font-stack = $helvetica-neue
-$font-size = 16
+$font-size = 16px
+$font-size-larger1 = 26px
 $font-color = #000;
+
+$font-size-mobile = 12px
+$font-size-larger1-mobile = 16px
 
 // Content Settings
 $common-link-color = #0000EE
@@ -52,51 +23,16 @@ $font-size-l0 = 55px
 $font-size-l1 = 35px
 $font-size-l2 = 25px
 $font-size-l3 = 20px
-// $font-size-l0 = 64px
-// $font-size-l1 = 40px
-// $font-size-l2 = 32px
-// $font-size-l3 = 24px
+
+
 $padding-l1 = 20%
 $padding-l2 = 25%
 $padding-l3 = 33%
 
-// Colors (via http://clrs.cc - slightly modded)
-$navy     = #001F3F
-$blue     = #0074D9
-$aqua     = #7FDBFF
-$teal     = #39CCCC
-$olive    = #3D9970
-$green    = #2ECC40
-$lime     = #01FF70
-$yellow   = #FFDC00
-$orange   = #FF851B
-$red      = #D13F19
-$maroon   = #85144B
-$fuchsia  = #F012BE
-$purple   = #B10DC9
-$white    = #FFFFFF
-$silver   = #DDDDDD
-$gray     = #AAAAAA
-$black    = #222222
+$widthSmallScreen=1000px
+$widthMobile=620px
 
-// Use as default HTML colors
-navy    = $navy
-blue    = $blue
-aqua    = $aqua
-teal    = $teal
-olive   = $olive
-green   = $green
-lime    = $lime
-yellow  = $yellow
-orange  = $orange
-red     = $red
-maroon  = $maroon
-fuchsia = $fuchsia
-purple  = $purple
-white   = $white
-silver  = $silver
-gray    = $gray
-black   = $black
+
 
 // Default color
 $default-color = $blue
