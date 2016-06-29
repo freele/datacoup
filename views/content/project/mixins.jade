@@ -3,11 +3,11 @@ mixin link(link, tooltip)
     i.fa.fa-external-link.externalLink(aria-hidden="true")
 
 mixin exp(cat, level, link, other, addClass)
-  span.expandable(onclick='expandCat("'+cat+'")')= link+(other||'')
-  //- span= other
+  span.expandable(onclick='expandCat("'+cat+'")')= link
+  span= other
   div(id=cat, class='contentLevel'+level+' '+(addClass||''))
     block
-    div test
+    .closeButton close
 
 mixin pic(src)
   div

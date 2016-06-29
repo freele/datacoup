@@ -9,7 +9,8 @@ html
     meta(name='author', content= "author of the site")
     //- uncomment if your site is responsive!
     //- meta(name="viewport" content="width=device-width, initial-scale=1")
-    - var title = title || _path
+    //- - var title = title || _path
+    - var title =  'Project Data Coup'
     title #{title}
     script(src='vendors/jquery-2.2.3.min.js')
     script(src='vendors/jquery.ba-bbq.min.js')
@@ -17,7 +18,7 @@ html
     != css()
 
   body
-    //- script(type='text/javascript', src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520298a93f505d86')
+    script(type='text/javascript', src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520298a93f505d86')
     block content
 
     != js()

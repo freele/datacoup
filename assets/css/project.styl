@@ -1,12 +1,15 @@
 @import '_settings'
 
+.closeButton
+  display: none;
+
 .contentLevel0
   font-size: $font-size-l0;
 .contentLevel0 > div
   padding-bottom: 80px;  
 .contentLevel0 > div > .expandable
   // text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #000 30px, #000 32px, rgba(0, 0, 0, 0) 32px);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 29px, #000 29px, #000 32px, rgba(0, 0, 0, 0) 32px);
 .contentLevel0 > .lastElement
   padding-bottom: 0px;
 
@@ -63,6 +66,10 @@
   $thinBorder = linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 8px, #000 8px, #000 9px, rgba(0, 0, 0, 0) 9px);
   $strongBorder = linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 5px, #000 5px, #000 9px, rgba(0, 0, 0, 0) 9px);
   $leftBorder = linear-gradient(to right, #FFF, #FFF 0px, #000 0px, #000 4px, #FFF 4px);
+
+  .closeButton {
+    display: block;
+  }
   
   .expanded {
     background-image: $strongBorder !important;
