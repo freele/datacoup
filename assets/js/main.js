@@ -10,13 +10,24 @@ function updateQueryWithoutReload(newQuery) {
 }
 
 function toggle(element, state) {
+  const node = $(element);
   if (state === true) {
-    $(element).show(400);
+    node.show(400);
   } else if (state === false) {
-    $(element).hide(400);
+    node.hide(400);
   } else {
-    $(element).toggle(400); 
+    console.log('TOGGLE');
+    debugger;
+    node.toggle(400); 
   }
+
+  // const temp = node.is(":visible");
+  // node.prev().addClass('isHidden');
+  if (state) {
+    node.prev().addClass('expanded');
+  } else {
+    node.prev().removeClass('expanded');
+  };
 }
 
 function expandCat(cat, state, initialLoad) {
@@ -26,8 +37,10 @@ function expandCat(cat, state, initialLoad) {
     var openTabs = $.deparam(window.location.search.substr(1))
     if (openTabs[cat] === undefined || openTabs[cat] === '0') {
       openTabs[cat] = '1';
+      state = true;
     } else {
       openTabs[cat] = '0';
+      state = false;
     }
     lastOpenTabs = openTabs;
 

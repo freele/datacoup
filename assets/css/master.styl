@@ -3,6 +3,9 @@
 normalize-css()
 base()
 
+*
+  box-sixing: border-box;
+
 html
   height: 100%;
 
@@ -27,6 +30,9 @@ h2
   padding: 45px 100px 100px 100px;
 }
 
+.header
+  height: 50px;
+
 @media only screen and (max-width: $widthSmallScreen) and (min-width: $widthMobile){
   .wrapper {
     padding: 15px 40px 40px 40px;
@@ -36,15 +42,20 @@ h2
   .wrapper {
     padding: 15px 20px 20px 20px;
   }
+
+  .header{
+    height: 30px;
+  }
+
+  .header > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $font-color;
+    font-family: $helvetica-black;
+    font-size: $font-size-mobile;
+  }
 }
 
-
-// .mainWrapper div
-//   padding-top: 7px;
-
-
-.header
-  height: 50px;
 
 .header > a
   text-decoration: none;
